@@ -605,6 +605,50 @@
     background: var(--white);
   }
   .pricing-cta-solid:hover { background: var(--off); }
+
+  /* ========================
+   CARE
+======================== */
+.care-section { padding: 120px 64px; background: var(--dark); }
+
+.care-section .section-title {
+  line-height: 1.1;
+}
+
+.care-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.care-item {
+  background: var(--card);
+  padding: 36px 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  transition: background 0.3s;
+}
+.care-item:hover { background: var(--card2); }
+
+.care-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+
+.care-item p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--gray);
+  line-height: 1.75;
+}
+
+.care-footer {
+  margin-top: 32px;
+  padding: 24px 32px;
+  border-left: 2px solid var(--red);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--off);
+}
   
   /* ========================
      ORDER FORM
@@ -848,6 +892,9 @@
   
     /* PRICING */
     .pricing-grid { grid-template-columns: 1fr; gap: 2px; }
+
+    .care-section { padding: 72px 20px; }
+    .care-grid { grid-template-columns: 1fr; }
   
     /* ORDER */
     .order-layout { grid-template-columns: 1fr; gap: 40px; }
