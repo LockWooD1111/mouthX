@@ -762,42 +762,61 @@
   .form-note a:hover { text-decoration: underline; }
   
   /* ========================
-     FOOTER
-  ======================== */
-  footer {
-    padding: 44px 64px;
-    border-top: 1px solid var(--border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 22px;
-    letter-spacing: 5px;
-    color: var(--white);
-    text-decoration: none;
-  }
-  .footer-logo span { color: var(--red); }
-  
-  .footer-copy {
-    font-size: 11px;
-    color: var(--gray);
-    letter-spacing: 0.5px;
-  }
-  
-  .footer-social { display: flex; gap: 20px; }
-  .footer-social a {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--gray);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  .footer-social a:hover { color: var(--red); }
+   FOOTER
+======================== */
+footer {
+  padding: 64px;
+  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 5px;
+  color: var(--white);
+  text-decoration: none;
+}
+.footer-logo span { color: var(--red); }
+
+.footer-contacts { text-align: center; }
+
+.footer-contacts-title {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 16px;
+}
+
+.footer-contacts-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-contacts-list a, span {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--gray);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-contacts-list a:hover { color: var(--red); }
+
+.footer-copy {
+  font-size: 11px;
+  color: var(--gray);
+  letter-spacing: 0.5px;
+  text-align: right;
+}
   
   /* ========================
      ANIMATIONS
@@ -901,5 +920,11 @@
     .form-row { grid-template-columns: 1fr; }
   
     /* FOOTER */
-    footer { flex-direction: column; gap: 18px; text-align: center; }
+    footer {
+      grid-template-columns: 1fr;
+      padding: 48px 20px;
+      text-align: center;
+    }
+    .footer-copy { text-align: center; }
+    .footer-contacts-list { gap: 16px; }
   }
