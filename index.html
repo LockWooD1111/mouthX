@@ -369,6 +369,26 @@
           </div>
         </div>
 
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">პრომოკოდი</label>
+            <div class="promo-input-wrap">
+              <input type="text" class="form-input" id="promoInput" placeholder="შეიყვანეთ კოდი" autocomplete="off">
+              <button type="button" class="promo-btn" id="promoBtn">გამოყენება</button>
+            </div>
+          </div>
+          <div class="form-group" style="justify-content: flex-end;">
+            <div class="promo-price-block">
+              <div class="promo-original" id="promoOriginal"></div>
+              <div class="promo-final" id="promoFinal"></div>
+              <div class="promo-msg" id="promoMsg"></div>
+            </div>
+          </div>
+        </div>
+        
+        <input type="hidden" name="promo" id="promoHidden">
+        <input type="hidden" name="final_price" id="promoFinalHidden">
+
         <button type="submit" class="form-submit">განაცხადის გაგზავნა →</button>
         
       </form>

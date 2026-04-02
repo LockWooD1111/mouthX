@@ -760,6 +760,62 @@
   }
   .form-note a { color: var(--red); text-decoration: none; }
   .form-note a:hover { text-decoration: underline; }
+
+  /* ========================
+   PROMO
+======================== */
+.promo-input-wrap {
+  display: flex;
+  gap: 0;
+}
+
+.promo-input-wrap .form-input {
+  flex: 1;
+}
+
+.promo-btn {
+  background: var(--card2);
+  border: 1px solid var(--border-dim);
+  border-left: none;
+  color: var(--red);
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.promo-btn:hover { background: var(--card); }
+
+.promo-price-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+  padding-top: 8px;
+}
+
+.promo-original {
+  font-size: 13px;
+  color: var(--gray);
+  text-decoration: line-through;
+}
+
+.promo-final {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: var(--white);
+  line-height: 1;
+}
+
+.promo-msg {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: var(--red);
+}
   
   /* ========================
    FOOTER
