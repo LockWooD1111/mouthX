@@ -66,7 +66,10 @@
     color: var(--white);
     text-decoration: none;
   }
-  .logo span { color: var(--red); }
+  .logo span { 
+    color: var(--red);
+    font-size: 28px;
+  }
   
   .nav-links {
     display: flex;
@@ -836,7 +839,9 @@ footer {
   color: var(--white);
   text-decoration: none;
 }
-.footer-logo span { color: var(--red); }
+.footer-logo span { 
+  color: var(--red);
+  font-size: 24px;}
 
 .footer-contacts { text-align: center; }
 
