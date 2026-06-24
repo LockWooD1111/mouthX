@@ -17,7 +17,8 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // PROMO
 const PROMOS = {
-  'MOUTHX2009!': 10
+  'MOUTHX2009!': 10,
+  'GLADIUS': 15
 };
 
 const PRICES = {
